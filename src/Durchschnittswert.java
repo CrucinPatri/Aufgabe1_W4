@@ -7,6 +7,6 @@ public class Durchschnittswert {
 
         double medie = (double) sum / grades.length;
 
-        return Math.round(medie*100)/100.0;
+        return Math.round(medie*100)/100.0;  //valoarea rotunjita la doua zecimale.
     }
 }

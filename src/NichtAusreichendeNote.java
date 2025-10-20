@@ -1,7 +1,7 @@
 public class NichtAusreichendeNote {
     //note insuficiente cele < 40.
     public static int[] InsufficientNotes(int[] grades) {
-        int count = 0;
+        int count = 0; //pt. lista rezultanta.
 
         //int grade = 0;
         for (int grade : grades) {

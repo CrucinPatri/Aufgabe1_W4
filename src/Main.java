@@ -16,6 +16,10 @@ public class Main {
         int[] rounded = AbgerundeteNoten.roundGrades(grades);
         System.out.println("AbgerundeteNoten: " + Arrays.toString(rounded));
 
+        //Maximal abgerundete Note
+        int max = MaximaleNote.getMaximalRoundedGrades(grades);
+        System.out.println("MaximalRoundedGrades: " + (max));
+
 
     }
 }
