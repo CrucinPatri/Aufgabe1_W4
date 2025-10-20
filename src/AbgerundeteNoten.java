@@ -1,19 +1,15 @@
 public class AbgerundeteNoten {
-    public static int[] roundGrades(int[] grades){
+    public static int[] roundGrades(int[] grades) {
         int[] rounded = new int[grades.length];
-
-        for(int i = 0; i < grades.length; i++){
+        for (int i = 0; i < grades.length; i++) {
             int grade = grades[i];
+            if (grade >= 38) {
+                int next_grade = ((grade / 5) + 1) * 5;
+                if (next_grade - grade < 3)
+                    grade = next_grade;
 
-            if(grade < 38) //nu se rotunjeste.
-                rounded[i] = grade;
-            else{
-                int multipleOf5 = ((grade/5 )+ 1) * 5;
-                if(multipleOf5 - grade < 5)
-                    rounded[i] = multipleOf5;
-                else
-                    rounded[i] = grade;
             }
+            rounded[i] = grade;
         }
         return rounded;
     }
