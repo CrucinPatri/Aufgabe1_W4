@@ -11,5 +11,11 @@ public class Main {
         // Mittelnote.
         double medie = Durchschnittswert.getDurchsnitt(grades);
         System.out.println("Durchschnittswert: " + medie);
+
+        //Round Grade
+        int[] rounded = AbgerundeteNoten.roundGrades(grades);
+        System.out.println("AbgerundeteNoten: " + Arrays.toString(rounded));
+
+
     }
 }
